@@ -11,6 +11,7 @@ url="https://apps.gnome.org/Calendar"
 arch=(x86_64)
 license=(GPL-3.0-or-later)
 depends=(
+  cairo
   dconf
   evolution-data-server
   gcc-libs
@@ -20,6 +21,8 @@ depends=(
   graphene
   gsettings-desktop-schemas
   gtk3
+  hicolor-icon-theme
+  libhandy
   libgweather-4
   libical
   libsoup3
