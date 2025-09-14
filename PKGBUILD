@@ -2,10 +2,10 @@
 
 pkgname=gnome-calendar-linuxmint
 _pkgname=gnome-calendar
-pkgver=41.2
-_realpkgver=43.really41+mint2
-_pkgver=wilma
-pkgrel=2
+pkgver=48.1
+_realpkgver=48.1+mint1
+_pkgver=gigi
+pkgrel=1
 pkgdesc="Simple and beautiful calendar application designed to perfectly fit the GNOME desktop. Linux Mint version to fit the Cinnamon desktop."
 url="https://apps.gnome.org/Calendar"
 arch=(x86_64)
@@ -45,13 +45,8 @@ optdepends=(
   'xdg-desktop-portal-impl: Various user settings (e.g. 24-hour clock)'
 )
 
-source=("http://packages.linuxmint.com/pool/upstream/g/gnome-calendar/gnome-calendar_${_realpkgver}+${_pkgver}.tar.xz" "fix.patch")
-sha256sums=('c4e67d3973ee5353c983d2ac5d3362914ca7ee2289fb1cd76d3d018d5a5df689' 'SKIP')
-
-prepare() {
-  cd $_pkgname
-  patch -Np1 -i ../fix.patch
-}
+source=("http://packages.linuxmint.com/pool/upstream/g/gnome-calendar/gnome-calendar_${_realpkgver}+${_pkgver}.tar.xz")
+sha256sums=('16e5c6ba5f3640c1e39372bcc5c254a85648918a3711e4b713714679bbe92a52')
 
 build() {
   arch-meson $_pkgname build
