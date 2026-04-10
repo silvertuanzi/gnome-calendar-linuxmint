@@ -5,7 +5,7 @@ _pkgname=gnome-calendar
 pkgver=48.1
 _realpkgver=48.1+mint1
 _pkgver=gigi
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple and beautiful calendar application designed to perfectly fit the GNOME desktop. Linux Mint version to fit the Cinnamon desktop."
 url="https://apps.gnome.org/Calendar"
 arch=(x86_64)
@@ -23,6 +23,7 @@ depends=(
   gtk3
   hicolor-icon-theme
   libhandy
+  libedataserverui4
   libgweather-4
   libical
   libsoup3
