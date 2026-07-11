@@ -27,8 +27,13 @@ optdepends=(
   'xdg-desktop-portal-impl: Various user settings (e.g. 24-hour clock)'
 )
 
-source=("http://packages.linuxmint.com/pool/upstream/g/gnome-calendar/gnome-calendar_${_realpkgver}+${_pkgver}.tar.xz")
-sha256sums=('16e5c6ba5f3640c1e39372bcc5c254a85648918a3711e4b713714679bbe92a52')
+source=("http://packages.linuxmint.com/pool/upstream/g/gnome-calendar/gnome-calendar_${_realpkgver}+${_pkgver}.tar.xz" '0001-Support-libical-4.0.0.patch')
+sha256sums=('16e5c6ba5f3640c1e39372bcc5c254a85648918a3711e4b713714679bbe92a52' 'SKIP')
+
+prepare() {
+  cd "$srcdir/gnome-calendar"
+  patch -p1 <"$srcdir/0001-Support-libical-4.0.0.patch"
+}
 
 build() {
   arch-meson $_pkgname build

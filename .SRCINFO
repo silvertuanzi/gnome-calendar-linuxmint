@@ -27,6 +27,8 @@ pkgbase = gnome-calendar-linuxmint
 	provides = gnome-calendar
 	conflicts = gnome-calendar
 	source = http://packages.linuxmint.com/pool/upstream/g/gnome-calendar/gnome-calendar_48.1+mint1+gigi.tar.xz
+	source = 0001-Support-libical-4.0.0.patch
 	sha256sums = 16e5c6ba5f3640c1e39372bcc5c254a85648918a3711e4b713714679bbe92a52
+	sha256sums = SKIP
 
 pkgname = gnome-calendar-linuxmint
