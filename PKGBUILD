@@ -5,35 +5,16 @@ _pkgname=gnome-calendar
 pkgver=48.1
 _realpkgver=48.1+mint1
 _pkgver=gigi
-pkgrel=2
+pkgrel=3
 pkgdesc="Simple and beautiful calendar application designed to perfectly fit the GNOME desktop. Linux Mint version to fit the Cinnamon desktop."
 url="https://apps.gnome.org/Calendar"
 arch=(x86_64)
 license=(GPL-3.0-or-later)
 depends=(
-  cairo
-  dconf
-  evolution-data-server
-  gcc-libs
-  geoclue
-  glib2
-  glibc
-  graphene
-  gsettings-desktop-schemas
-  gtk3
-  hicolor-icon-theme
-  libhandy
-  libedataserverui4
-  libgweather-4
-  libical
-  libsoup3
-  libdazzle
-  pango
+  dconf evolution-data-server geoclue glib2 glibc graphene gtk4 libgcc libadwaita hicolor-icon-theme libedataserverui4 libgweather-4 libsoup3 libical
 )
 makedepends=(
-  git
-  glib2-devel
-  meson
+  git glib2-devel meson
 )
 provides=(
     ${_pkgname}
