@@ -7,3 +7,15 @@ So use [libadwaita-without-adwaita](https://aur.archlinux.org/packages?O=0&K=lib
 This newest version only add support [gnome-online-accounts-gtk](https://aur.archlinux.org/packages/gnome-online-accounts-gtk). This package provided by Arch requires `gnome-control-center` to manage online accounts.
 
 If you don't need this, just use the version in Arch official repository.
+
+### Note
+
+After Arch upgraded to **libical 4.0**, the upstream test suite became outdated and the `check()` phase fails. This is not specific to this package—the current official Arch Linux `gnome-calendar` package also fails the same test.
+
+Since the failure is caused by an outdated test rather than a functional issue, this package does not carry an additional patch for it.
+
+Build the package with:
+
+```bash
+makepkg --nocheck
+```
