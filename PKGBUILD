@@ -11,7 +11,7 @@ url="https://apps.gnome.org/Calendar"
 arch=(x86_64)
 license=(GPL-3.0-or-later)
 depends=(
-  dconf evolution-data-server geoclue glib2 glibc graphene gtk4 libgcc libadwaita hicolor-icon-theme libedataserverui4 libgweather-4 libsoup3 libical
+  dconf evolution-data-server geoclue glib2 glibc graphene gtk4 gcc-libs libadwaita hicolor-icon-theme libedataserverui4 libgweather-4 libsoup3 libical
 )
 makedepends=(
   git glib2-devel meson
